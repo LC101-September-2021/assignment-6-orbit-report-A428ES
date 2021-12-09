@@ -6,7 +6,7 @@
         <th>Orbit Type</th>
         <th>Launch Date</th>
     </tr>
-    <tr class="data-row" [class.alternate]="satellite.alternate(increaseNumber())" *ngFor="let satellite of satellites">
+    <tr class="data-row" *ngFor="let satellite of satellites">
         <td>{{satellite.name}}</td>
         <td [class.warning]="satellite.changeColor">{{satellite.type}}</td>
         <td>{{satellite.launchDate}}</td>
@@ -17,4 +17,4 @@
 
 <!-- TODO 2b: use *ngFor to display satellite data in the table -->
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
-
+<!-- [class.alternate]="satellite.alternate(increaseNumber())" -->

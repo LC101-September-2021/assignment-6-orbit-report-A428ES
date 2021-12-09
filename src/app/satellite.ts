@@ -17,12 +17,16 @@ export class Satellite {
 	isSpaceDebris(): boolean {
 		if(this.type === "Space Debris"){
 			return true;
+		} else {
+			return false;
 		}
    }
 
    alternate(number: number): boolean {
 	if(number % 2 === 0){
 		return true;
+	} else {
+		return false;
 	}
    }
 }

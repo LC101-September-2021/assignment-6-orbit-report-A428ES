@@ -13,8 +13,6 @@ export class Satellite {
 		this.launchDate = launchDate;
 		this.orbitType = orbitType;
 		this.operational = operational;
-
-		this.isSpaceDebris();
    }
 	
 	isSpaceDebris(): boolean {
@@ -27,7 +25,7 @@ export class Satellite {
 		}
    }
 
-   alternate(number): boolean {
+   alternate(number: number): boolean {
 	if(number % 2 === 0){
 		return true;
 	} else {

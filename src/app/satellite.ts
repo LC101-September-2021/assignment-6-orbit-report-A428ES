@@ -15,9 +15,20 @@ export class Satellite {
    }
 	
 	isSpaceDebris(): boolean {
-		return true;
+		if(this.type === "Space Debris"){
+			return true;
+		} else {
+			return false;
+		}
    }
 
+   alternate(number: number): boolean {
+	if(number % 2 === 0){
+		return true;
+	} else {
+		return false;
+	}
+   }
 }
 
 // TODO 3a: fix isSpaceDebris check

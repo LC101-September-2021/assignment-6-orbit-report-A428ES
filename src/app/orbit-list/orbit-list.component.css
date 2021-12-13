@@ -7,6 +7,14 @@
 	background-color: #da8a8a;
 }
 
+.alternate {
+	background-color: gold;
+}
+
+tr:nth-child(even) {
+	background-color: skyblue;
+  }
+
 table {
  color: #111;
  border-radius: 5px;
